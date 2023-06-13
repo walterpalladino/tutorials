@@ -1,15 +1,11 @@
 package com.whp.tutorials;
 
-/*
-https://www.bezkoder.com/spring-boot-jpa-h2-example/
-
- */
-
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
+@EnableCaching
 public class TutorialsApplication {
 
 	public static void main(String[] args) {

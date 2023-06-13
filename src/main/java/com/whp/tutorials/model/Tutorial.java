@@ -6,12 +6,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.antlr.v4.runtime.misc.NotNull;
 
+import java.io.Serializable;
+
 @Entity
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "tutorials")
-public class Tutorial {
+public class Tutorial implements Serializable {
 
     @Id
     @NotNull
